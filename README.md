@@ -1,2 +1,2 @@
 # tap
-client and server implementation of Table Access Protocol (TAP) specification
+client and server implementation of Table Access Protocol (TAP) specification for BigQuery
