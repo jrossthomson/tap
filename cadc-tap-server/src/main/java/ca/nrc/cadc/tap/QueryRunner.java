@@ -96,6 +96,7 @@ import java.security.AccessControlException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -140,7 +141,9 @@ public class QueryRunner implements JobRunner
     private SyncOutput syncOutput;
     private WebServiceLogInfo logInfo;
 
-    public QueryRunner() { }
+    public QueryRunner() { 
+        log.debug("In QueryRunner Constructor");
+    }
 
     @Override
     public void setJob(Job job)
@@ -233,6 +236,7 @@ public class QueryRunner implements JobRunner
     
     private void doIt()
     {
+        log.debug("In QueryRunner Doit");
         List<Result> diagnostics = new ArrayList<>();
 
         long t1 = System.currentTimeMillis();
@@ -336,6 +340,7 @@ public class QueryRunner implements JobRunner
 
             log.debug("invoking TapQuery implementation: " + query.getClass().getCanonicalName());
             String sql = query.getSQL();
+            log.debug("******** SQL: " + sql + " **********");
             List<TapSelectItem> selectList = query.getSelectList();
             String queryInfo = query.getInfo();
 
@@ -370,13 +375,28 @@ public class QueryRunner implements JobRunner
                     // make fetch size (client batch size) small,
                     // and restrict to forward only so that client memory usage is minimal since
                     // we are only interested in reading the ResultSet once
-                    connection.setAutoCommit(pfac.getAutoCommit());
+                    Boolean commit = pfac.getAutoCommit();
+                    //connection.setAutoCommit(commit);
+
+                    log.debug("******** SQL: " + sql + " **********");
                     pstmt = connection.prepareStatement(sql);
                     pstmt.setFetchSize(1000);
                     pstmt.setFetchDirection(ResultSet.FETCH_FORWARD);
 
                     log.debug("executing query: " + sql);
                     resultSet = pstmt.executeQuery();
+                    log.debug("executing query: DONE ");
+
+                    // ResultSetMetaData rsmd = resultSet.getMetaData();
+                    // int columnsNumber = rsmd.getColumnCount();
+                    // while (resultSet.next()) {
+                    //     for (int i = 1; i <= columnsNumber; i++) {
+                    //         if (i > 1) System.out.print(",  ");
+                    //         String columnValue = resultSet.getString(i);
+                    //         System.out.print(columnValue + " " + rsmd.getColumnName(i) + " " + rsmd.getColumnClassName(i));
+                    //     }
+                    //     System.out.println("");
+                    // }
                 }
 
                 t2 = System.currentTimeMillis(); dt = t2 - t1; t1 = t2;
@@ -384,6 +404,7 @@ public class QueryRunner implements JobRunner
                 
                 String filename = "result_" + job.getID() + "." + tableWriter.getExtension();
                 String contentType = tableWriter.getContentType();
+                log.debug("filename: " + filename);
                 
                 if (syncOutput != null)
                 {
@@ -392,6 +413,7 @@ public class QueryRunner implements JobRunner
                     syncOutput.setHeader("Content-Type", contentType);
                     String disp = "inline; filename=\""+filename+"\"";
                     syncOutput.setHeader("Content-Disposition", disp);
+                    log.debug("maxRows: " + filename);
                     if (maxRows == null)
                         tableWriter.write(resultSet, syncOutput.getOutputStream());
                     else

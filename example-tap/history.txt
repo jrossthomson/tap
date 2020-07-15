@@ -1,0 +1,1000 @@
+ 1020  grep -i table_name *
+ 1021  cd
+ 1022  cd tomcat/
+ 1023  ls
+ 1024  cd webapps/
+ 1025  ls
+ 1026  cd tap
+ 1027  ls
+ 1028  cd META-INF/
+ 1029  ls
+ 1030  cd ..
+ 1031  cd WEB-INF/
+ 1032  ls
+ 1033  cd lib/
+ 1034  ls
+ 1035  ls *con*
+ 1036  jar -tvf cadc-access-control-identity-1.0.8.jar 
+ 1037  jar -tvf cadc-access-control-1.1.19.jar 
+ 1038  jar -tvf cadc-access-control-1.1.19.jar  | grep -i auth
+ 1039  jar --help
+ 1040  cd
+ 1041  cd tap
+ 1042  find . -name "*.gradle"
+ 1043  cd example-tap/
+ 1044  gradle build
+ 1045  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1046  l
+ 1047  cat tsQuery 
+ 1048  pushd ~/tomcat/webapps/tap/WEB-INF/lib/
+ 1049  ls
+ 1050  jar -tvf cadc-access-control-server-1.1.22.jar 
+ 1051  cd ..
+ 1052  cd webapps/tap/WEB-INF/lib/
+ 1053  ls
+ 1054  jar tvf cadc-access-control-server-1.1.22.jar
+ 1055  psql "host=localhost sslmode=disable dbname=tapdata user=tapuser"
+ 1056  pushd
+ 1057  gradle build
+ 1058  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1059  gradle build
+ 1060  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1061  gradle build
+ 1062  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1063  gradle build
+ 1064  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1065  gradle build
+ 1066  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1067  pushd
+ 1068  ls
+ 1069  pushd
+ 1070  pushd 
+ 1071  pushd +3
+ 1072  xs
+ 1073  cd
+ 1074  cd tap/example-tap/src/main/webapp/WEB-INF/lib/
+ 1075  ls
+ 1076  unzip ~/SimbaJDBCDriverforGoogleBigQuery42_1.2.2.1004.zip 
+ 1077  ls
+ 1078  pushd
+ 1079  pushd ~3
+ 1080  pushd ~2
+ 1081  popd
+ 1082  pushd
+ 1083  popd
+ 1084  pushd
+ 1085  opod
+ 1086  popd
+ 1087  gradle build
+ 1088  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1089  ls src/main/webapp/WEB-INF/lib/
+ 1090  ls ~/tomcat/webapps/tap/WEB-INF/
+ 1091  ls ~/tomcat/webapps/tap/WEB-INF/lib/
+ 1092  ls src/main/webapp/WEB-INF/
+ 1093  ls src/main/webapp/WEB-INF/*.jar
+ 1094  rm src/main/webapp/WEB-INF/*.jar
+ 1095  ls
+ 1096  rm src/main/webapp/WEB-INF/
+ 1097  ls src/main/webapp/WEB-INF/
+ 1098  vi catalina.properties 
+ 1099  ls
+ 1100  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1101  ls ~
+ 1102  pwd
+ 1103  pushd ~
+ 1104  mv tap-adql-a34714bae24d.p12 tap
+ 1105  ls
+ 1106  cd tap
+ 1107  ls -l
+ 1108  pwd
+ 1109  la
+ 1110  popd
+ 1111  gradle build
+ 1112  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1113  gradle build
+ 1114  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1115  gradle build
+ 1116  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1117  gradle build
+ 1118  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1119  bq
+ 1120  bq mk --table tap_schema.schemas11 schema_name:STRING
+ 1121  gradle build
+ 1122  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1123  gradle build
+ 1124  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1125  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tap_schema.tables"
+ 1126  gradle build
+ 1127  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1128  gradle build
+ 1129  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1130  gradle build
+ 1131  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1132  gradle build
+ 1133  gradle -v build
+ 1134  gradle -h
+ 1135  gradle --recompile-scripts build
+ 1136  gradle --refresh-dependencies build
+ 1137  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1138  ls
+ 1139  cd ..
+ 1140  cd cadc-tap-server
+ 1141  ls
+ 1142  gradle build
+ 1143  ls
+ 1144  ls -a
+ 1145  gradle -v
+ 1146  gradle build
+ 1147  cd
+ 1148  ls
+ 1149  ./cloud_sql_proxy -instances=tap-adql:us-central1:tapdata=tcp:5432
+ 1150  ls
+ 1151  cd tap/
+ 1152  cd cadc-tap-server
+ 1153  ls
+ 1154  cat PluginFactory.properties 
+ 1155  ls
+ 1156  cd ..
+ 1157  ls
+ 1158  mv intTest.gradle ..
+ 1159  cd cadc-tap-server
+ 1160  ls
+ 1161  gradle build
+ 1162  ls
+ 1163  ls build/libs
+ 1164  ls /tmp
+ 1165  ls ~/tomcat/logs
+ 1166  pushd ~/tomcat/logs
+ 1167  ls
+ 1168  grep "loaded:" *
+ 1169  grep DEBUG *
+ 1170  popd
+ 1171  cd ..
+ 1172  cd example-tap/
+ 1173  gradle build
+ 1174  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1175  gradle build
+ 1176  cp build/libs/example-tap-1.1.war ~/tomcat/webapps/tap.war
+ 1177  gradle build
+ 1178  gradle -S build
+ 1179  pushd ../cadc-tap-server
+ 1180  ls
+ 1181  gradle build
+ 1182  pushd
+ 1183  gradle build
+ 1184  history 
+ 1185  history  > build.sh
+ 1186  vi build.sh 
+ 1187  sh build.sh 
+ 1188  vi build.sh 
+ 1189  sh build.sh 
+ 1190  ls
+ 1191  pushd
+ 1192  cd
+ 1193  ls
+ 1194  ls -l /home/jrossthomson/tap/example-tap/build/resources/main/PluginFactory.properties
+ 1195  ls -l /home/jrossthomson/tap/example-tap/build/resources/main
+ 1196  ls -l /home/jrossthomson/tap/example-tap/build/resources/
+ 1197  chown jrossthomson /home/jrossthomson/tap/example-tap/build/resources/main/*
+ 1198  popd
+ 1199  sh build.sh 
+ 1200  dpkg 
+ 1201  ls
+ 1202  dpkg 
+ 1203  sh build.sh 
+ 1204  ls
+ 1205  ls /tmp
+ 1206  ls ~?tom
+ 1207  pushd
+ 1208  ls
+ 1209  cd temp
+ 1210  ls
+ 1211  ls
+ 1212  pushd
+ 1213  ls
+ 1214  cd tap/example-tap/
+ 1215  ls
+ 1216  cd src/main/webapp/WEB-INF/
+ 1217  ls
+ 1218  cat web.xml 
+ 1219  cd
+ 1220  cd tap
+ 1221  ls
+ 1222  grep -ri . -e "ca.nrc.cadc.log"
+ 1223  cd ..
+ 1224  grep -ri . -e "ca.nrc.cadc.log"
+ 1225  sudo grep -ri . -e "ca.nrc.cadc.log"
+ 1226  cd tap/example-tap/
+ 1227  gradle build
+ 1228  pushd ~/tomcat/
+ 1229  ls
+ 1230  cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1231  sudo sh ./bin/catalina.sh run 
+ 1232  pushd 
+ 1233  gradle build
+ 1234  pushd
+ 1235  cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1236  psql "host=localhost sslmode=disable dbname=tapdata user=tapuser"
+ 1237  pushd
+ 1238  gradle build
+ 1239  pushd
+ 1240  cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1241  pushd
+ 1242  gradle build
+ 1243  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1244  pushd ; gradle build
+ 1245  gradle build
+ 1246  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1247  pushd ; gradle build
+ 1248  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1249  pushd ; gradle build
+ 1250  gradle build
+ 1251  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1252  gradle build
+ 1253  pushd ; gradle build
+ 1254  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1255  pushd ; gradle build
+ 1256  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1257  pushd ; gradle build
+ 1258  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1259  pushd ; gradle build
+ 1260  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1261  pushd ; gradle build
+ 1262  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1263  pushd ; gradle build
+ 1264  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1265  pushd ; gradle build
+ 1266  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1267  pushd
+ 1268  ls
+ 1269  cat tsQuery 
+ 1270  sh ./tsQuery
+ 1271  vi tsQuery 
+ 1272  sh ./tsQuery
+ 1273  vi tsQuery 
+ 1274  sh ./tsQuery
+ 1275  vi tsQuery 
+ 1276  sh ./tsQuery
+ 1277  gradle build
+ 1278  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1279  pushd ; gradle build
+ 1280  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1281  pushd
+ 1282  ls
+ 1283  gradle -q dependencies
+ 1284  gradle build
+ 1285  pushd
+ 1286  pushd ; cp ../tap/example-tap/build/libs/example-tap-1.1.war webapps/tap.war
+ 1287  cd weg
+ 1288  cd webapps/
+ 1289  ls
+ 1290  cd tap
+ 1291  ls
+ 1292  ls -l tap
+ 1293  ls -ld tap
+ 1294  sudo -i
+ 1295  sudo
+ 1296  sudo -s
+ 1297  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%201000"
+ 1298  rm /home/jrossthomson/tap/example-tap/build/test-results/binary/test/output.bin.idx
+ 1299  sudo rm /home/jrossthomson/tap/example-tap/build/test-results/binary/test/output.bin.idx
+ 1300  sudo rm /home/jrossthomson/tap/example-tap/build/test-results/binary/test/output.bin
+ 1301  cd tap
+ 1302  sudo rm ../example-tap/src/main/webapp/WEB-INF/lib/cadc-tap-server-1.1.13.jar
+ 1303  sudo rm example-tap/src/main/webapp/WEB-INF/lib/cadc-tap-server-1.1.13.jar
+ 1304  sudo rm /home/jrossthomson/tap/.gradle/2.5/taskArtifacts/cache.properties.lock
+ 1305  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%201000"
+ 1306  screen -r
+ 1307  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%201000"
+ 1308  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%2010"
+ 1309  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%2010" > junk.xml
+ 1310  echo `curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%2010"`
+ 1311  curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%20100" > junk.xml
+ 1312  ls
+ 1313  curl -h
+ 1314  curl -h | grep head
+ 1315  curl -I "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%20100" > junk.xml
+ 1316  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%20100" > junk.xml
+ 1317  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205" > junk.xml
+ 1318  find . -name "result_ic6x3qz3l4bbd8a1.xml"
+ 1319  sudo find . -name "result_ic6x3qz3l4bbd8a1.xml"
+ 1320  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205" > junk.xml
+ 1321  curl --location "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205" > junk.xml
+ 1322  cat junk.xml 
+ 1323  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205" > junk.xml
+ 1324  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205"
+ 1325  screen -r
+ 1326  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205"
+ 1327  ls
+ 1328  git clone https://github.com/opencadc/dal.git
+ 1329  ls
+ 1330  cd dal
+ 1331  ls
+ 1332  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20LIMIT%205"
+ 1333  screen -r
+ 1334  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1335  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name=tapdata.allwise"
+ 1336  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1337  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205"
+ 1338  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1339  screen-r
+ 1340  screen -r
+ 1341  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205"
+ 1342  http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205
+ 1343  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205"
+ 1344  screen -r
+ 1345  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205"
+ 1346  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1347  screen -r
+ 1348  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1349  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20*%20FROM%20tapdata.allwise%20where%20designation='J000702.84-180753.8'LIMIT%205"
+ 1350  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1351  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1352  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1353  screen -r
+ 1354  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1355  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1356  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1357  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1358  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1359  git https://github.com/opencadc/uws.git
+ 1360  git clone https://github.com/opencadc/uws.git
+ 1361  ls
+ 1362  git clone https://github.com/opencadc/ac.git
+ 1363  git clone https://github.com/opencadc/core.git
+ 1364  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1365  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1366  screen -r
+ 1367  screen -r
+ 1368  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1369  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1370  ps -ef | grep code
+ 1371  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1372  screen -r
+ 1373  ls
+ 1374  cd tap/
+ 1375  ls
+ 1376  cd WEB-INF/
+ 1377  ls
+ 1378  cd lib/
+ 1379  ls
+ 1380  ls | grep exam
+ 1381  cd ..
+ 1382  ls
+ 1383  cd classes/
+ 1384  ls
+ 1385  cd ca/nrc/cadc/sample/
+ 1386  ls
+ 1387  pushd
+ 1388  ls
+ 1389  pushd
+ 1390  pushd ~/tap/example-tap/
+ 1391  ls
+ 1392  pushd ../
+ 1393  ls *
+ 1394  ls */src
+ 1395  ls cadc-adql/src/main/
+ 1396  ls */src/main/
+ 1397  ls */src/main/java
+ 1398  ls */src/main/java/ca
+ 1399  ls */src/main/java/canrc
+ 1400  ls */src/main/java/ca/nrc
+ 1401  ls */src/main/java/ca/nrc/cadc
+ 1402  ls */src/main/java/ca/nrc/cadc/auth
+ 1403  ls */src/main/java/ca/nrc/cadc/tap
+ 1404  cd core/
+ 1405  ls
+ 1406  gradle build
+ 1407  gradle build -Xlint
+ 1408  gradle -Xlint build 
+ 1409  grep checkstyleTest *p
+ 1410  ls
+ 1411  cat opencadc.gradle 
+ 1412  mv opencadc.gradle ..
+ 1413  gradle build
+ 1414  ls
+ 1415  vi settings.gradle 
+ 1416  gradle build
+ 1417  vi cadc-log/build.gradle
+ 1418  gradle build
+ 1419  vi cadc-log/build.gradle
+ 1420  cp ../opencadc.gradle .
+ 1421  vi opencadc.gradle 
+ 1422  gradle build
+ 1423  f
+ 1424  gradle build
+ 1425  grep -r checkstyleMain
+ 1426  grep -r checkstyleMain .
+ 1427  grep -r . checkstyleMain
+ 1428  grep -r checkstyleMain .
+ 1429  grep -r
+ 1430  grep --help
+ 1431  ls -a
+ 1432  cat .travis.yml 
+ 1433  gradle checkstyleMain
+ 1434  grep -r checkstyle .
+ 1435  gradle build
+ 1436  ls cadc-log/config/checkstyle/
+ 1437  ls cadc-log/config/
+ 1438  ls cadc-log
+ 1439  cp ../opencadc.gradle 
+ 1440  cp ../opencadc.gradle .
+ 1441  gradle build
+ 1442  ls
+ 1443  which java
+ 1444  java -v
+ 1445  java -V
+ 1446  java -version
+ 1447  cd //
+ 1448  cd/
+ 1449  cd /
+ 1450  find . -name jdk
+ 1451  javac
+ 1452  java
+ 1453  which java
+ 1454  ls -l /usr/bin/java
+ 1455  ls -l /etc/alternatives/java
+ 1456  ls -l /etc/alternatives/
+ 1457  ls /usr/lib
+ 1458  pushd
+ 1459  ls
+ 1460  cd ..
+ 1461  ls
+ 1462  cd example-tap/
+ 1463  ls
+ 1464  sudo grep -ri . -e "ca.nrc.cadc.log"
+ 1465  ls
+ 1466  sudo sh build.sh 
+ 1467  ls
+ 1468  pushd ~/tomcat/webapps/
+ 1469  ls
+ 1470  opo
+ 1471  pop
+ 1472  popd
+ 1473  pushd
+ 1474  popod
+ 1475  popd
+ 1476  pushd
+ 1477  ls
+ 1478  ls -l
+ 1479  echo $CATALINA_OPTS 
+ 1480  pushd 
+ 1481  pushd ..
+ 1482  popd
+ 1483  pushd
+ 1484  cd ..
+ 1485  ls
+ 1486  cd 
+ 1487  cd tomcat/
+ 1488  ls
+ 1489  cd logs/
+ 1490  ls
+ 1491  ls -lrt
+ 1492  vi catalina.2019-12-16.log 
+ 1493  grep Impl *
+ 1494  grep AuthenticatorImpl *
+ 1495  pushd
+ 1496  vi ~/.bashrc 
+ 1497  ps -ef
+ 1498  ps -ef | grep cat
+ 1499  kill 12272
+ 1500  ps -ef | grep cat
+ 1501  sudo sh build.sh 
+ 1502  pushd ../core/
+ 1503  ls
+ 1504  cat settings.gradle 
+ 1505  cp settings.gradle ../settings.gradle 
+ 1506  ls
+ 1507  vi settings.gradle 
+ 1508  gradle build
+ 1509  ls
+ 1510  ls cadc-util/
+ 1511  find . -name "*.jar"
+ 1512  cd ..
+ 1513  ls
+ 1514  rm sample.war 
+ 1515  cd example-tap/
+ 1516  ls
+ 1517  cp ../settings.gradle  .
+ 1518  vi settings.gradle 
+ 1519  gradle.build
+ 1520  gradle build
+ 1521  gradle build -C rebuild
+ 1522  gradle build --rerun-tasks
+ 1523  gradle build 
+ 1524  vi build.sh 
+ 1525  pushd
+ 1526  popd
+ 1527  pushd
+ 1528  popd
+ 1529  pushd ../core/
+ 1530  ls
+ 1531  pushd
+ 1532  ls
+ 1533  vi build.sh 
+ 1534  ls
+ 1535  vi build.gradle 
+ 1536  sudo sh build.sh 
+ 1537  exit
+ 1538  ls
+ 1539  vi urls.txt 
+ 1540  screen -r
+ 1541  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1542  screen -r
+ 1543  ls
+ 1544  ps -ef | grep 3187
+ 1545  screen -r
+ 1546  restart
+ 1547  upstart
+ 1548  cd tomcat/
+ 1549  ls
+ 1550  cd ..
+ 1551  tail -f local.log 
+ 1552  grep Auth local.log 
+ 1553  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1554  screen -r
+ 1555  screen
+ 1556  screen -r
+ 1557  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1558  curl  "http://34.67.191.83/tap/async"
+ 1559  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1560  curl  "http://34.67.191.83/tap"
+ 1561  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1562  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1563  curl  "http://34.67.191.83/tap/async?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1564  ls
+ 1565  cat > tsq
+ 1566  vi tsq 
+ 1567  sh tsq
+ 1568  wget http://34.67.191.83/tap/async/oiu48wovner5zecv
+ 1569  cat oiu48wovner5zecv 
+ 1570  curl http://34.67.191.83/tap/async/oiu48wovner5zecv
+ 1571  sh tsq
+ 1572  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'" -X POST http://34.67.191.83/tap/async
+ 1573  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1574  http://34.67.191.83/tap/async/rszx6qoch6zoimvp
+ 1575  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1576  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1577  ls
+ 1578  file tap-adql-0e081529cbe1.json 
+ 1579  cat tap-adql-0e081529cbe1.json 
+ 1580  rm tap-adql-0e081529cbe1.json 
+ 1581  gcloud
+ 1582  gcloud iam service-accounts keys list     --iam-account jdbcconnector@tap-adql.iam.gserviceaccount.com
+ 1583  ls
+ 1584  gcloud iam service-accounts keys create ~/key.json   --iam-account jdbcconnector@tap-adql.iam.gserviceaccount.com
+ 1585  la
+ 1586  ls
+ 1587  ls -l key.json 
+ 1588  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1589  screen -e
+ 1590  screen -r
+ 1591  cd tap/
+ 1592  ls
+ 1593  cd WEB-INF/
+ 1594  ls
+ 1595  cd lib/
+ 1596  ls
+ 1597  ls cadc*
+ 1598  ls cadc-rest-1.2.11.jar 
+ 1599  ls -l cadc-rest-1.2.11.jar 
+ 1600  grep "created:" local.log 
+ 1601  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1602  vi local.log 
+ 1603  tail -f local.log 
+ 1604  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1605  vi local.log 
+ 1606  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1607  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1608  vi local.log 
+ 1609  pushd ~/tomcat/webapps/tap/
+ 1610  ls
+ 1611  sudo -s
+ 1612  pushd ~/tomcat/webapps/tap/WEB-INF/lib/
+ 1613  ls
+ 1614  ls *server*
+ 1615  jar tvf cadc-tap-server-1.1.13.jar | more
+ 1616  jar tvf *.jar
+ 1617  I am searching for a .class file inside a bunch of jars.
+ 1618  jar tf abc.jar 
+ 1619  works for one file. I tried
+ 1620  find -name "*.jar" | xargs jar tf
+ 1621  find -name "*.jar"
+ 1622  find -name "*.jar" -exec jar tvf {} \;
+ 1623  find -name "*.jar" -exec jar tvf {} \; | grep Rest
+ 1624  find -name "*.jar" -exec echo {}\; jar tvf {} \; | grep Rest
+ 1625  find -name "*.jar" -exec echo {}\; -exec jar tvf {} \; | grep Rest
+ 1626  find -name "*.jar" -exec echo {}\; -exec jar tvf {} \; 
+ 1627  jar tvf cadc-tap-server-1.1.13.jar 
+ 1628  while [ $f in *.jar ]; print $f; jar tfv $f; done
+ 1629  while [ $f in *.jar ]; do;  print $f; jar tfv $f; done
+ 1630  while [ $f in *.jar ] do;   print $f; jar tfv $f; done
+ 1631  while [ $f in *.jar ]; do print $f; jar tfv $f; done
+ 1632  while [ $f in `*.jar` ]; do print $f; jar tfv $f; done
+ 1633  while [ $f in `*.jar` ]; do print $f; done
+ 1634  while [ $f in `ls *.jar` ]; do print $f; done
+ 1635  find -name "*.jar" -exec (echo {}\; ; jar tvf {}) \; | grep Rest
+ 1636  find -name "*.jar" -exec "echo {}\; ; jar tvf {} \;" | grep Rest
+ 1637  find -name "*.jar" -exec "echo {}\; || jar tvf {} \;" | grep Rest
+ 1638  ls
+ 1639  cd
+ 1640  cd tap/core/
+ 1641  ls
+ 1642  cat settings.gradle 
+ 1643  cat opencadc.gradle 
+ 1644  ls
+ 1645  cd cadc-rest/
+ 1646  ls
+ 1647  cat build.gradle 
+ 1648  ls
+ 1649  ls -l build/libs/cadc-rest-1.2.11.jar 
+ 1650  pushd
+ 1651  cd tap/
+ 1652  ls
+ 1653  vi build.sh
+ 1654  ls
+ 1655  cd example-tap/
+ 1656  ls
+ 1657  vi build.sh 
+ 1658  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1659  pushd
+ 1660  cd
+ 1661  vi local.log 
+ 1662  curl http://34.67.191.83/tap/async/rysib4xfq24nh08t
+ 1663  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1664  curl http://34.67.191.83/tap/async/loqf3sqdlv1owrbn
+ 1665  ls
+ 1666  cd tap
+ 1667  ls
+ 1668  cd core/
+ 1669  ls
+ 1670  cd ..
+ 1671  ls
+ 1672  cd usw
+ 1673  cd uww
+ 1674  cd uws
+ 1675  ls
+ 1676  cd cadc-uws-server/
+ 1677  ls
+ 1678  cat build.gradle 
+ 1679  gradle build
+ 1680  vi build.gradle 
+ 1681  gradle build
+ 1682  gradle --stacktrace build
+ 1683  gradle build
+ 1684  curl http://34.67.191.83/tap/async/loqf3sqdlv1owrbn
+ 1685  ls
+ 1686  pushjd
+ 1687  pushd
+ 1688  ls
+ 1689  popd
+ 1690  ls
+ 1691  pushd ~
+ 1692  ls
+ 1693  ls -l
+ 1694  curl http://34.67.191.83/tap/async/loqf3sqdlv1owrbn/phase
+ 1695  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1696  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1697  curl http://34.67.191.83/tap/async/swre1p143cuo25kf
+ 1698  curl --help
+ 1699  curl --help | grep put
+ 1700  curl http://34.67.191.83/tap/async/swre1p143cuo25kf
+ 1701  curl http://34.67.191.83/tap/async
+ 1702  curl http://34.67.191.83/tap/async/swre1p143cuo25kf
+ 1703  curl http://34.67.191.83/tap/async
+ 1704  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/status
+ 1705  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/phase
+ 1706  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/quote
+ 1707  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/error
+ 1708  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/parameters
+ 1709  curl http://34.67.191.83/tap/async/swre1p143cuo25kf/destruction
+ 1710  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1711  vi local.log 
+ 1712  tail -f local.log 
+ 1713  la
+ 1714  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1715  curl http://34.67.191.83/tap/async/s27zhpd737uscdj7
+ 1716  pushd ~
+ 1717  ls
+ 1718  cd t
+ 1719  cd tap
+ 1720  ls
+ 1721  cd uws
+ 1722  ls
+ 1723  gradle build
+ 1724  cd ..
+ 1725  ls
+ 1726  cat settings.gradle 
+ 1727  ls
+ 1728  gradle build
+ 1729  cd core
+ 1730  ls
+ 1731  gradle build
+ 1732  ls
+ 1733  cat settings.gradle 
+ 1734  pushd usw
+ 1735  pushd uws
+ 1736  pushd ../uws
+ 1737  ls
+ 1738  cp ~1/settings.gradle 
+ 1739  cp ~1/settings.gradle  .
+ 1740  ls
+ 1741  popod
+ 1742  popd
+ 1743  cd ..
+ 1744  ls
+ 1745  cd example-tap/
+ 1746  ls
+ 1747  vi build.sh 
+ 1748  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1749  vi build.sh 
+ 1750  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1751  pushd
+ 1752  cd tomcat/
+ 1753  ls
+ 1754  cd webapps/
+ 1755  ls
+ 1756  cd tap/
+ 1757  ls
+ 1758  sudo -s
+ 1759  while(1) ; do echo bong; done
+ 1760  while(true) ; do echo bong; done
+ 1761  screen -r
+ 1762  cd tap
+ 1763  ls
+ 1764  cd WEB-INF/
+ 1765  ls
+ 1766  cd lib/
+ 1767  ls
+ 1768  ls cadc-uws-server-1.2.5.jar 
+ 1769  jar tf cadc-uws-server-1.2.5.jar 
+ 1770  ls -l cadc-uws-server-1.2.5.jar 
+ 1771  pushd
+ 1772  pushd ~/tap/example-tap/src/main/webapp/WEB-INF/lib/
+ 1773  ls
+ 1774  ls -l cadc-uws-server-1.2.5.jar 
+ 1775  pushd
+ 1776  pushd ~/tap
+ 1777  ls
+ 1778  cd core
+ 1779  ls
+ 1780  cd ../uws
+ 1781  gradle build
+ 1782  cp ../cadc-uws-server/build/libs/cadc-uws-server-1.2.5.jar ../example-tap/src/main/webapp/WEB-INF/lib/
+ 1783  ls cadc-uws-server/build/libs/cadc-uws-server-1.2.5.jar 
+ 1784  popd
+ 1785  cd
+ 1786  ls
+ 1787  curl -L -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/uuuASYNCu
+ 1788  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1789  curl http://34.67.191.83/tap/async/ei7dy6vwkjt66en1
+ 1790  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1791  curl http://34.67.191.83/tap/async/ei7dy6vwkjt66en1/RUN
+ 1792  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1793  curl http://34.67.191.83/tap/async/vdd1gu454pr59nep/RUN
+ 1794  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1795  curl http://34.67.191.83/tap/async/zjcxaoxnvod167ws/run
+ 1796  curl -d http://34.67.191.83/tap/async/zjcxaoxnvod167ws/run
+ 1797  curl -d "pert"  http://34.67.191.83/tap/async/zjcxaoxnvod167ws/run
+ 1798  curl -d "pert"  http://34.67.191.83/tap/async/zjcxaoxnvod167ws/phase
+ 1799  curl -d "pert"  http://34.67.191.83/tap/async/zjcxaoxnvod167ws/phase/run
+ 1800  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/zjcxaoxnvod167ws/phase/run
+ 1801  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1802  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/kr94dbpqduh6rt8t/phase/run
+ 1803  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1804  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/smlnsdj8vi1mzdbq/phase/run
+ 1805  ls
+ 1806  pushd tomcat/
+ 1807  ls
+ 1808  cd temp
+ 1809  ls
+ 1810  cd ..
+ 1811  mkdir data
+ 1812  ls
+ 1813  cd data
+ 1814  pwd
+ 1815  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1816  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/zt7yyp902tep13b3/phase/run
+ 1817  ls
+ 1818  curl  http://34.67.191.83/tap/async/zt7yyp902tep13b3/phase/run
+ 1819  ls
+ 1820  ls tomcat/data/
+ 1821  I see the results
+ 1822  curl  http://34.67.191.83/tap/async/zt7yyp902tep13b3/phase/run
+ 1823  ls tomcat/data/
+ 1824  cat  tomcat/data/result_jeynpv51qyrxrjez.xml 
+ 1825  sudo cat  tomcat/data/result_jeynpv51qyrxrjez.xml 
+ 1826  ls
+ 1827  cd tomcat/
+ 1828  ls
+ 1829  cd webapps/
+ 1830  cd tap/
+ 1831  ls
+ 1832  mv  ~/tomcat/data/ tap
+ 1833  sudo mv  ~/tomcat/data/ tap
+ 1834  cd tap/
+ 1835  ls
+ 1836  sudo -s
+ 1837  cd tap[
+ 1838  cd tap
+ 1839  ls
+ 1840  cd data/
+ 1841  ls
+ 1842  ls -l
+ 1843  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1844  curl -d "PHASE=RUN"  http://34.67.191.83/tap/ucxnl5ze0v6mivt8/phase/run
+ 1845  pushd
+ 1846  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1847  curl -d "PHASE=RUN"  http://34.67.191.83/tap/fkc8aqsgef26m9u3/phase/run
+ 1848  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/fkc8aqsgef26m9u3/phase/run
+ 1849  curl http://34.67.191.83/tap/async/fkc8aqsgef26m9u3/phase/run
+ 1850  ls
+ 1851  cd ..
+ 1852  ls
+ 1853  cd data/
+ 1854  ls
+ 1855  screen -r
+ 1856  cd tap
+ 1857  ls
+ 1858  pushd
+ 1859  ls
+ 1860  pusd ~/tap/example-tap/src/main/webapp/
+ 1861  pushd ~/tap/example-tap/src/main/webapp/
+ 1862  mkdir data
+ 1863  pushd
+ 1864  sudo sh build.sh 
+ 1865  pushd
+ 1866  cd ..
+ 1867  cd .l
+ 1868  cd ..
+ 1869  ls
+ 1870  sudo sh build.sh 
+ 1871  ls
+ 1872  mkdir data
+ 1873  cd data
+ 1874  pwd
+ 1875  curl -H "Content-Type: application/x-www-form-urlencoded" -d "LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise' limit 10" -X POST http://34.67.191.83/tap/async
+ 1876  curl -d "PHASE=RUN"  http://34.67.191.83/tap/async/ncc59bdqu9osbfkr/phase/run
+ 1877  ls
+ 1878  curl -d  http://34.67.191.83/tap/async/ncc59bdqu9osbfkr
+ 1879  curl  http://34.67.191.83/tap/async/ncc59bdqu9osbfkr
+ 1880  curl http://34.67.191.83/data/result_ncc59bdqu9osbfkr.xml
+ 1881  ls
+ 1882  cd data/
+ 1883  ls
+ 1884  ls -l
+ 1885  wc -l result_u7v9inunqtyoibw2.xml
+ 1886  sudo -s
+ 1887  ddx.xml
+ 1888  wc -l result_ua5bvcx6gxjpwddx.xml
+ 1889  ls
+ 1890  ls -l
+ 1891  ls -l result_rmfoggwsoscoxugz.xml
+ 1892  ls -lc result_rmfoggwsoscoxugz.xml
+ 1893  ls -l
+ 1894  screen -r
+ 1895  tail -f local.log 
+ 1896  vi local.log 
+ 1897  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.allwise'"
+ 1898  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tap_schema.columns+WHERE+table_name='tapdata.mepwise'"
+ 1899  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tapdata.allwise+limit 10"
+ 1900  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tapdata.allwise+limit+10"
+ 1901  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tapdata.mepwise+limit+10"
+ 1902  ls
+ 1903  cd tap/
+ 1904  ls
+ 1905  cd example-tap/
+ 1906  ls
+ 1907  sudo sh build.sh
+ 1908  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tapdata.mepwise+limit+10"
+ 1909  curl  "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT+*+FROM+tapdata.allwise+limit+10"
+ 1910  screen -r
+ 1911  ls .ssh/
+ 1912  0wd
+ 1913  pwd
+ 1914  ls
+ 1915  gsutil cp work.tar gs://tap-adql-bak/
+ 1916  du .
+ 1917  sudo cvf backup.tar *>
+ 1918  rm work.tar 
+ 1919  sudo cvf backup.tar *
+ 1920  sudo tar cvf backup.tar *
+ 1921  gsutil cp backup.tar  gs://tap-adql-bak/
+ 1922  ls
+ 1923  ls
+ 1924  tar cvf work.tar *
+ 1925  ls
+ 1926  tar cvf work.tar 
+ 1927  tar tvf work.tar 
+ 1928  ls
+ 1929  cd tao
+ 1930  cd tap
+ 1931  ls
+ 1932  cd .ssh
+ 1933  ls
+ 1934  cd ..
+ 1935  cd .ssh/
+ 1936  ls
+ 1937  cat git_rsa
+ 1938  cat git_rsa.pub 
+ 1939  ssh -T -p 443 git@ssh.github.com
+ 1940  ssh -T jrossthomson@ssh.github.com
+ 1941  ssh -T jrossthomson@github.com
+ 1942  ssh -T git@github.com
+ 1943  cd .ssh
+ 1944  ls
+ 1945  vi config
+ 1946  ssh -T git@github.com
+ 1947  vi config
+ 1948  cd
+ 1949  ls
+ 1950  cd tap
+ 1951  ls
+ 1952  cd .git
+ 1953  ls
+ 1954  vi config 
+ 1955  eval "$(ssh-agent -s)"
+ 1956  pushd
+ 1957  pushd ~/.ssh
+ 1958  ls
+ 1959  vi config
+ 1960  ssh-add -K ~/.ssh/git_rsa
+ 1961  ssh-add ~/.ssh/git_rsa
+ 1962  ssh -T git@github.com
+ 1963  rm config 
+ 1964  ssh -T git@github.com
+ 1965  cd
+ 1966  cd tap/
+ 1967  ls
+ 1968  git commit 
+ 1969  vi .git/config 
+ 1970  git commit nn
+ 1971  git commit 
+ 1972  vi .git/config 
+ 1973  git commit 
+ 1974  vi .git/config 
+ 1975  git commit 
+ 1976  git config --global user.email "jrossthomson@google.com:
+ 1977  git config --global user.email "jrossthomson@google.com"
+ 1978  git config --global user.name "Ross Thomson"
+ 1979  vi .git/config 
+ 1980  git commit 
+ 1981  ls -a
+ 1982  vi .gitignore 
+ 1983  git commit 
+ 1984  vi .gitignore 
+ 1985  git commit 
+ 1986  vi .gitignore 
+ 1987  git commit 
+ 1988  cd tap
+ 1989  ls
+ 1990  cd tap
+ 1991  ls
+ 1992  history 
+ 1993  history | historyfile.txt
+ 1994  history > historyfile.txt
+ 1995  ls
+ 1996  cd tap
+ 1997  ls
+ 1998  cd ..
+ 1999  ls
+ 2000  cat tsq
+ 2001  cat shap.sh 
+ 2002  rm shap.sh 
+ 2003  rm tsq
+ 2004  ls
+ 2005  file oiu48wovner5zecv 
+ 2006  cat oiu48wovner5zecv 
+ 2007  rm oiu48wovner5zecv 
+ 2008  ls
+ 2009  cat local.log 
+ 2010  truncate local.log 
+ 2011  cat > local.log 
+ 2012  ls 
+ 2013  ls tap
+ 2014  ls tap/example-tap/
+ 2015  cat local.log 
+ 2016  ls
+ 2017  cd tap/example-tap/
+ 2018  ls
+ 2019  history > history.txt

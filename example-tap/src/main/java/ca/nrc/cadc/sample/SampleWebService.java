@@ -75,6 +75,15 @@ import ca.nrc.cadc.vosi.avail.CheckDataSource;
 import ca.nrc.cadc.vosi.avail.CheckException;
 import org.apache.log4j.Logger;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Sample WebService implementation for VOSI-availability. The class name for this class
@@ -88,6 +97,7 @@ public class SampleWebService implements AvailabilityPlugin
     
     private static String TAPDS_NAME = "jdbc/tapuser";
     // note tap_schema table names
+    
     private String TAPDS_TEST = "select schema_name from tap_schema.schemas11 where schema_name='tap_schema'";
     
     public SampleWebService()
@@ -112,11 +122,28 @@ public class SampleWebService implements AvailabilityPlugin
     {
         boolean isGood = true;
         String note = "service is accepting queries";
+        // Connection con = null;
+        // Statement st = null;
+        // ResultSet rs = null;
         try
         {
             // test query using standard TAP data source
-            CheckDataSource checkDataSource = new CheckDataSource(TAPDS_NAME, TAPDS_TEST);
+            // log.error("web service status test failed", t);
+            log.debug("about to connect to DB");
+            log.debug(TAPDS_NAME);
+            CheckDataSource checkDataSource = new CheckDataSource(TAPDS_NAME, TAPDS_TEST, true);
             checkDataSource.check();
+            // Context initContext = new InitialContext();
+            // log.debug("getting context");
+            // Context envContext = (Context) initContext.lookup("java:/comp/env");
+            // log.debug("lookup datasource");
+            // DataSource ds = (DataSource) envContext.lookup(TAPDS_NAME);
+            // log.debug("get connection");
+            // con = ds.getConnection("tapuser", "tappassword");
+            // log.debug("ccreate statement");
+            // st = con.createStatement();
+            // log.debug("execute query");
+            // rs = st.executeQuery(TAPDS_TEST);
             
             // check for a certficate needed to perform network ops
             //File cert = ...
@@ -128,15 +155,17 @@ public class SampleWebService implements AvailabilityPlugin
             //CheckWebService cws = new CheckWebService(avail);
             //cws.check();
         }
-        catch(CheckException ce)
-        {
-            // tests determined that the resource is not working
-            isGood = false;
-            note = ce.getMessage();
-        }
+        // catch(CheckException ce)
+        // {
+            // // tests determined that the resource is not working
+            // log.debug("Check Failed");
+            // isGood = false;
+            // note = ce.getMessage();
+        // }
         catch (Throwable t)
         {
             // the test itself failed
+            log.debug("Check Failed blurg");
             log.error("web service status test failed", t);
             isGood = false;
             note = "test failed, reason: " + t;

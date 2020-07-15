@@ -35,7 +35,7 @@
     -->
 
     <!-- connection pool for executing TAP queries, including create/load of tables in tap_upload -->
-    <Resource name="jdbc/tapuser"
+    <!-- <Resource name="jdbc/tapuser"
         auth="Container"
         type="javax.sql.DataSource"
         factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" closeMethod="close"
@@ -45,6 +45,43 @@
         username="${example.tapuser.username}" password="${example.tapuser.password}"
         driverClassName="org.postgresql.Driver" url="${example.tapuser.url}"
         removeAbandoned="false"
+        validationQuery="select version()"
         testOnBorrow="true" validationQuery="select 123" />
-    
+    -->
+    <!-- 
+        Resource for Datasources. 
+        jdbc/tapuser is the active "name"
+        jdbc/tapuser_pg will not be used. It is configured to work with CloudSQL Proxy
+           (https://cloud.google.com/sql/docs/mysql/sql-proxy)
+        jdbc/tapuser_bq will not be used. It is for connecting to BigQuery
+
+        TEST QUERY
+        select schema_name from tap_schema.schemas11 where schema_name='tap_schema'
+
+    -->
+    <!--
+    <Resource name="jdbc/tapuser_pg" scope="Shareable" type="javax.sql.DataSource"
+        kauth="Container"
+        validationQuery="select 123" 
+        url="jdbc:postgresql://localhost/tapdata"
+        password="tappassword"
+        maxActive="4"
+        maxWait="5000"
+        closeMethod="close"
+        driverClassName="org.postgresql.Driver"
+        username="tapuser"
+        maxIdle="2"
+        />
+    -->
+    <Resource name="jdbc/tapuser" scope="Shareable" type="javax.sql.DataSource"
+        auth="Container"
+        validationQuery="select 123" 
+        url="jdbc:bigquery://https://www.googleapis.com/bigquery/v2:443;ProjectId=tap-adql;OAuthType=0;OAuthServiceAcctEmail=jdbcconnector@tap-adql.iam.gserviceaccount.com;OAuthPvtKeyPath=/home/jrossthomson/key.json;LogLevel=0;Timeout=100;"
+        maxActive="4"
+        maxWait="5000"
+        closeMethod="close"
+        driverClassName="com.simba.googlebigquery.jdbc42.Driver"
+        autoCommit="false"
+        maxIdle="2"
+        />
 </Context>

@@ -143,6 +143,7 @@ public class PluginFactoryImpl extends PluginFactory {
     public boolean getAutoCommit() {
         String name = QueryRunner.class.getName() + ".autoCommit";
         String cval = config.getProperty(name);
+
         if (cval == null) {
             return false;
         }
@@ -274,6 +275,8 @@ public class PluginFactoryImpl extends PluginFactory {
     public ResultStore getResultStore() {
         String name = ResultStore.class.getName();
         String cname = config.getProperty(name);
+        log.debug("name: "+ name);
+        log.debug("cname: "+ cname);
         try {
             Class c = Class.forName(cname);
             ResultStore ret = (ResultStore) c.newInstance();

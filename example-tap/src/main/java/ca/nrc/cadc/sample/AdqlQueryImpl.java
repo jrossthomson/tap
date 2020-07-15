@@ -104,13 +104,16 @@ public class AdqlQueryImpl extends AdqlQuery
         // example: for postgresql we have to convert TOP to LIMIT
         super.navigatorList.add(new TopConverter(new ExpressionNavigator(), new ReferenceNavigator(), new FromItemNavigator()));
 
+        log.debug("*************** NOTE ***************");
         // TAP-1.1 tap_schema version is encoded in table names
         TableNameConverter tnc = new TableNameConverter(true);
-        tnc.put("tap_schema.schemas", "tap_schema.schemas11");
-        tnc.put("tap_schema.tables", "tap_schema.tables11");
-        tnc.put("tap_schema.columns", "tap_schema.columns11");
-        tnc.put("tap_schema.keys", "tap_schema.keys11");
-        tnc.put("tap_schema.key_columns", "tap_schema.key_columns11");
+        tnc.put("tapdata.mepwise", "`tapdata.mepwise`");
+        tnc.put("tapdata.allwise", "`tapdata.allwise`");
+        tnc.put("tap_schema.schemas", "`tap_schema.schemas11`");
+        tnc.put("tap_schema.tables", "`tap_schema.tables11`");
+        tnc.put("tap_schema.columns", "`tap_schema.columns11`");
+        tnc.put("tap_schema.keys", "`tap_schema.keys11`");
+        tnc.put("tap_schema.key_columns", "`tap_schema.key_columns11`");
         TableNameReferenceConverter tnrc = new TableNameReferenceConverter(tnc.map);
         super.navigatorList.add(new SelectNavigator(new ExpressionNavigator(), tnrc, tnc));
         

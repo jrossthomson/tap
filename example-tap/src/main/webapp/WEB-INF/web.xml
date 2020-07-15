@@ -138,6 +138,10 @@
         <init-param>
             <param-name>ca.nrc.cadc.uws.server.JobManager</param-name>
             <param-value>ca.nrc.cadc.sample.SampleJobManager</param-value>
+            <!--
+                <param-name>ca.nrc.cadc.uws.web.SyncPostAction.execOnPOST</param-name>
+                <param-value>true</param-value>
+            -->
         </init-param>
         <!--
         <init-param>
@@ -211,6 +215,11 @@
     <servlet-mapping>
         <servlet-name>TableServlet</servlet-name>
         <url-pattern>/tables</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>TableServlet</servlet-name>
+        <url-pattern>/table/*</url-pattern>
     </servlet-mapping>
 	
     <!-- TODO: since this resource allows a POST to change the logging level, 

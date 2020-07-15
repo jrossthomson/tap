@@ -1,1 +1,16 @@
 **/docker/*.war
+**/.gradle/**
+*.class
+jar*tmp
+*.jar
+**/build/**
+example-tap/src/main/webapp/WEB-INF/Simba JDBC Driver for Google BigQuery Install and Configuration Guide.pdf
+example-tap/src/main/webapp/WEB-INF/third-party-licenses.txt
+example-tap/src/main/webapp/WEB-INF/lib/release-notes.txt
+example-tap/src/main/webapp/WEB-INF/lib/third-party-licenses.txt
+example-tap/src/main/webapp/WEB-INF/lib/Simba JDBC Driver for Google BigQuery Install and Configuration Guide.pdf
+example-tap/src/main/webapp/WEB-INF/release-notes.txt
+historyfile.txt
+example-tap/.project
+example-tap/tsq
+example-tap/tsQuery

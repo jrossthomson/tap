@@ -1,0 +1,1 @@
+curl "http://34.67.191.83/tap/sync?LANG=ADQL&QUERY=SELECT%20description%20FROM%20tap_schema.tables"

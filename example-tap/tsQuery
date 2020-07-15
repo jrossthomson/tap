@@ -2,8 +2,12 @@
 
 ## sample request: query TAP_SCHEMA.tables using the sync resource
 
-curl -v --location \
-	-d 'LANG=ADQL&QUERY=SELECT * FROM tap_schema.tables' \
-	http://localhost:8080/example-tap-1.1/sync
+## curl -v --location \
+## 	-d 'LANG=ADQL&QUERY=SELECT * FROM tap_schema.tables' \
+## 	http://34.67.191.83/tap/availability
+
+
+
+curl -v --location -d 'LANG=ADQL&QUERY=SELECT * FROM tap_schema.tables' http://34.67.191.83/tap/availability
 
 

@@ -6,6 +6,9 @@ plugins {
 }
 
 repositories {
+    flatDir {
+        dirs '$buildDir/../cadc-tap-server'
+    }
     jcenter()
     mavenLocal()
 }
@@ -20,13 +23,20 @@ dependencies {
     compile 'log4j:log4j:1.2.+'
 
     compile 'org.opencadc:cadc-log:[1.0,)'
-    compile 'org.opencadc:cadc-util:[1.2,)'
+    // compile 'org.opencadc:cadc-util:[1.2,)'
     compile 'org.opencadc:cadc-dali:[1.1,)'
     compile 'org.opencadc:cadc-uws:[1.0,)'
-    compile 'org.opencadc:cadc-uws-server:[1.2,)'
-    compile 'org.opencadc:cadc-tap-server:[1.1.5,)'
+    // compile 'org.opencadc:cadc-uws-server:[1.2,)'
+    // compile 'org.opencadc:cadc-tap-server:[1.1.5,)'
     compile 'org.opencadc:cadc-vosi:[1.0,)'
     compile 'org.opencadc:cadc-adql:[1.1,)'
+    compile 'org.opencadc:cadc-access-control:[1.1,)'
+    compile 'org.opencadc:cadc-access-control-identity:[1.0,)'
+    compile 'org.opencadc:cadc-access-control-server:[1.1,)'
+    compile 'com.google.cloud.sql:postgres-socket-factory:1.0.15'
+
+    // compile fileTree(dir: 'cadc-tap-server')
+    // compile fileTree('../cadc-tap-server')
 
     // Switch out this to use any supported database instead of PostgreSQL.
     // ## START CUSTOM DATABASE ##
@@ -41,6 +51,6 @@ dependencies {
 configurations {
   runtime.exclude group: 'javax.servlet'
   runtime.exclude group: 'net.sourceforge.jtds'
-  runtime.exclude group: 'org.postgresql'
+  // runtime.exclude group: 'org.postgresql'
   runtime.exclude group: 'org.restlet.jee'
 }
